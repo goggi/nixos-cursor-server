@@ -177,6 +177,8 @@
         }
         EOF
         chmod +x "$actual_dir/node"
+
+        sed -i '11a export UV_USE_IO_URING=0 # workaround for https://github.com/microsoft/vscode/issues/212678\n' "$actual_dir/bin/cursor-server"
       ''}
 
         # Mark the bin directory as being patched.
