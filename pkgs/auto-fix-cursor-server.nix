@@ -8,6 +8,7 @@
   coreutils,
   findutils,
   inotify-tools,
+  sed,
   patchelf,
   stdenv,
   curl,
@@ -121,7 +122,7 @@
 
   autoFixScript = writeShellApplication {
     name = "auto-fix-cursor-server";
-    runtimeInputs = [ coreutils findutils inotify-tools ];
+    runtimeInputs = [ coreutils findutils inotify-tools sed ];
     text = ''
       bins_dir_1=${installPath}/bin
       bins_dir_2=${installPath}/cli/servers
