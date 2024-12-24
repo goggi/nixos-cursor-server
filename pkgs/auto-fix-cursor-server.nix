@@ -8,7 +8,6 @@
   coreutils,
   findutils,
   inotify-tools,
-  sed,
   patchelf,
   stdenv,
   curl,
