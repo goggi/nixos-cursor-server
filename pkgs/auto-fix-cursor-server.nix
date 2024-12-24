@@ -18,6 +18,7 @@
   openssl,
   zlib,
   krb5,
+  sed,
   enableFHS ? false,
   nodejsPackage ? null,
   extraRuntimeDependencies ? [ ],
